@@ -1,0 +1,113 @@
+/* Common Tracker Layout shared by Workout and Diet */
+.tracker-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .tracker-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tracker-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tracker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.history-item {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-details h4 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.history-stats {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stat-badge {
+  background: var(--bg-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.stat-badge span {
+  font-weight: 700;
+  color: var(--text-main);
+  margin-right: 0.25rem;
+}
+
+.stat-highlight span {
+  color: var(--accent-primary);
+}
+
+.empty-state {
+  padding: 3rem 1rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

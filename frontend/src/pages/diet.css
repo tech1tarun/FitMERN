@@ -1,0 +1,93 @@
+/* Diet specific styles and Macros summary */
+
+.calorie-input {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.macro-row {
+  margin-top: 0.5rem;
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px dashed var(--border-subtle);
+}
+
+.macro-summary-panel {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(16, 185, 129, 0.1) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.macro-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.macro-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.macro-huge-stat {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.macro-huge-stat span {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.macro-progress-bars {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.macro-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.macro-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.macro-val {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.m-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.m-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease-out;
+}
+
+.protein-fill { background: #5E6AD2; }
+.carbs-fill { background: #F59E0B; }
+.fats-fill { background: #EF4444; }
